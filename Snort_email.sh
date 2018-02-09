@@ -9,7 +9,7 @@ EMAIL=rtumaian@truss.com.uy
 ###		 ###
 
 if [ -z "$DUMPFILE" ]; then
-        echo "$(ls -rt $SNORTPATH | tail -n5)"
+        echo "$(ls -lrt $SNORTPATH | tail -n5)"
         echo -n "Seleccione archivo con paquetes: "; read DUMPFILE
 fi
 ALERTA=/var/log/snort/alert
